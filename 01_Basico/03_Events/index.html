@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>03: Eventos</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./script.js" defer></script>
+	</head>
+	<body>
+		<h1>Eventos</h1>
+
+		<main>
+			<section>
+				<button id="oneclick-hide">Clique em mim para eu sumir!</button>
+			</section>
+
+			<section>
+				<button id="dblclick-hide">Dê um duplo clique em mim para eu sumir!</button>
+			</section>
+
+			<section>
+				<button id="enter">Coloque o mouse aqui!</button>
+			</section>
+
+			<section>
+				<button id="leave">Tire o mouse daqui!</button>
+			</section>
+
+			<section>
+				<button id="mousedown">Aperte qualquer botão do mouse aqui!</button>
+			</section>
+
+			<section>
+				<button id="mouseup">Solte qualquer botão do mouse aqui!</button>
+			</section>
+
+			<section>
+				<button id="mousehover">Coloque e tire o mouse daqui!</button>
+			</section>
+
+			<section>
+				<input type="text" id="onfocus" placeholder="Me selecione!" />
+			</section>
+
+			<section>
+				<input
+					type="text"
+					id="onblur"
+					placeholder="Me selecione e depois seleciona no outro!"
+				/>
+			</section>
+
+			<section>
+				<button id="on">Interaja comigo!</button>
+			</section>
+
+			<script type="text/javascript">
+				$("#on").on({
+					mouseenter: function () {
+						$(this).css("background-color", "lightgreen");
+						$(this).text("Entrou!");
+					},
+					mouseleave: function () {
+						$(this).css("background-color", "lightblue");
+						$(this).text("Saiu!");
+					},
+					click: function () {
+						$(this).css("background-color", "yellow");
+						$(this).text("Clicou!");
+					},
+                         dblclick: function() {
+                              $(this).css("background-color", "red");
+                              $(this).text("Duplo clique!");
+                         }
+				});
+			</script>
+		</main>
+	</body>
+</html>
