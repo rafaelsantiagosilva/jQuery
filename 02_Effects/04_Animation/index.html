@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>04: Animações</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- jQuery CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./script.js" defer></script>
+	</head>
+	<body>
+		<h1>Método animate()</h1>
+
+		<main>
+			<section>
+				<h2>Indo para a direita</h2>
+				<div class="container">
+					<div id="go-to-right" class="obj-to-be-animated"></div>
+				</div>
+				<button id="btn-go-to-right">Iniciar animação</button>
+			</section>
+
+			<section>
+				<h2>Várias propriedades</h2>
+				<div class="container">
+					<div id="multiple-props" class="obj-to-be-animated"></div>
+				</div>
+				<button id="btn-multiple-props">Iniciar animação</button>
+			</section>
+
+			<section>
+				<h2>Valores relativos</h2>
+				<p>Aperte várias vezes o botão!</p>
+				<div class="container">
+					<div id="relative-values" class="obj-to-be-animated"></div>
+				</div>
+				<button id="btn-relative-values">Iniciar animação</button>
+			</section>
+
+			<section>
+				<h2>Valores relativos</h2>
+				<p>"show", "hide" e "toggle"</p>
+				<div class="container">
+					<div id="pre-defined-values" class="obj-to-be-animated"></div>
+				</div>
+				<button id="btn-pre-defined-values">Me aperte várias vezes!</button>
+			</section>
+
+			<section>
+				<h2>A funcionalidade Queue</h2>
+				<p>Várias animações</p>
+				<h3>Exemplo 1</h3>
+				<div class="container">
+					<div id="queue-example-1" class="obj-to-be-animated"></div>
+				</div>
+				<button id="btn-queue-example-1">Me aperte</button>
+
+				<h3>Exemplo 2</h3>
+				<div class="container">
+					<div id="queue-example-2" class="obj-to-be-animated"></div>
+				</div>
+				<button id="btn-queue-example-2">Me aperte</button>
+			</section>
+		</main>
+	</body>
+</html>
