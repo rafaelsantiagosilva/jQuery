@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+     margin: 1em;
+     
+}
+
+.flip, .panel {
+     border: 1px solid black;
+     border-radius: 5px;
+     text-align: center;
+     padding: 5px;
+     font-weight: bold;
+     color: white;
+     background-color: rgb(44, 44, 105);
+     box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.505);
+}
+
+.flip {
+     cursor: pointer;
+}
+
+.panel {
+     padding: 50px;
+}
+
+.invisible {
+     display: none;
+}
+
+button {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.493); 
+}
+
+button:hover {
+     cursor: pointer;
+     box-shadow: none;
+}
