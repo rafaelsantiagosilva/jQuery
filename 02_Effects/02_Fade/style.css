@@ -1,0 +1,39 @@
+* {
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+     width: 100px;
+     height: 100px;
+     border: 1px solid black;
+     border-radius: 3px;
+     cursor: grab;
+     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.605);
+}
+
+.red {
+     background-color: rgb(169, 23, 23);
+}
+
+.green {
+     background-color: rgb(24, 134, 24);
+}
+
+.blue {
+     background-color: rgb(20, 20, 139);
+}
+
+.flex-container {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+button {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.493); 
+}
+
+button:hover {
+     cursor: pointer;
+     box-shadow: none;
+}
